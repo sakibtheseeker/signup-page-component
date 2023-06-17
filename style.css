@@ -1,0 +1,258 @@
+/* food ordering webpage -> css box model, css animations, css flexbox */
+/* the class name always starts with . */
+.red{
+    color: red;
+}
+
+/* css box model
+border -> border-width, border-style, border-color
+padding
+margin
+*/
+.main{
+    width: 400px;
+    padding: 30px;
+    margin: 6rem auto;
+    background: #FCFBFA;
+    border-radius: 8px;
+}
+
+
+
+
+.card1{
+    /* border: 1px solid lightgray; */
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    padding: 10px;
+    margin:8px;
+    width: 280px;
+    background-color:lightgoldenrodyellow	;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card1-img{
+    width:100%;
+    height: 150px;
+    border-radius: 18px;
+}
+
+.card2{
+    border: 1px solid lightgray;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    padding: 10px;
+    margin:8px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card2-img{
+    width: 10 px;
+    height:10px;
+    border-radius: 50%;
+    margin:20px;
+
+}
+
+.card3{
+    /* border: 1px solid lightgray; */
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    padding: 10px;
+    width: 600px;
+    background-color:lightgoldenrodyellow	;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card3-img{
+    width:100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 18px;
+}
+
+
+
+
+.btn1{
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 80px;
+   
+}
+
+.fav{
+    width: 25px;
+    height: 25px;
+margin-right: 25px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.demo{
+    width:100px;
+    height:100px;
+    background-color: tomato;
+
+    animation-name: demo-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+}
+
+/* destination -> @keyframes */
+
+@keyframes demo-animation{
+    100%{
+        transform: rotate(360deg);
+        margin-left: 1100px;
+        border-radius: 50%;
+    }
+}
+
+.cover {
+    object-fit: cover;
+    width: 1200px ;
+    height: 610px
+  }
+.card1:hover{
+    animation-name: card-animation;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+}   
+
+@keyframes card-animation{
+
+    100%{
+        transform: rotate(2deg);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+    }
+}
+
+/* Navbar */
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	background-color: #102CCA;
+    color: #FCFBFA;
+	align-items: center;
+	padding: 20px;
+}
+
+
+/* Login Page */
+
+.logincard{
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    margin: 35px 50px 50px 460px;
+    border-radius: 18px;
+    padding: 50px;
+    width: 450px;
+    height: auto;
+    justify-content: center;
+    background-color:white	;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.card4{
+    border-radius: 50%;
+    background-color: #102CCA;
+}
+
+.btn3{
+    background-color:#102CCA;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+   
+}
+
+.card5{
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+/* Signup Page */
+.signupcard{
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    margin: 50px 50px 50px 330px;
+    border-radius: 18px;
+    padding: 50px;
+    width: 700px;
+    height: auto;
+    justify-content: center;
+    background-color:white	;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+  .wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 1em 0;
+  }
+  canvas {
+    border: 1px solid #000000;
+    border-radius: 0.4em;
+    width: 190px;
+    height: 50px;
+  }
+  button#reload-button {
+    font-size: 26px;
+    width: 4em;
+    height: 50px;
+    justify-content: center;
+    background-color:  #102CCA;
+    border: none;
+    border-radius: 0.4em;
+    color: #ffffff;
+  }
+ 
+
+/*Home Page*/
+  .card5-img{
+    width: 10 px;
+    height:10px;
+    border-radius: 50%;
+    margin-top: 6px;
+    
+}
+
+.card5{
+    border-radius: 50%;
+    background-color: #102CCA;
+    border: #ffffff;
+    margin-top: 5px;
+}
+.btn4{
+    background-color:#102CCA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 13%;  
+}
+
+.btn5{
+    background-color:#102CCA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;  
+}
